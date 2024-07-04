@@ -14,6 +14,9 @@ app.get('/', (req, res)=>{
     res.send('HALOOOOO Koding JS')
 })
 
+//define routes
+app.use('/api', router)
+
 app.listen(port, ()=>{
     console.log(`Server running port ${port}`);
 })
